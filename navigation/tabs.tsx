@@ -2,7 +2,7 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import { COLORS, icons } from "../constants";
-import { Home } from "../screens";
+import { Home, Search } from "../screens";
 import { TabIcon } from "../components"
 
 const Tab = createBottomTabNavigator();
@@ -44,7 +44,7 @@ const Tabs = () => {
       />
       <Tab.Screen
         name="Search"
-        component={Home}
+        component={Search}
         options={{
           tabBarIcon: ({ focused }) => (
             <TabIcon focused={focused} icon={icons.search} />
