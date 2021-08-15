@@ -8,6 +8,7 @@ import right_arrow from '../assets/icons/right-arrow.png'
 import search from '../assets/icons/search.png'
 import start from '../assets/icons/star.png'
 import upload from '../assets/icons/upload.png'
+import close from '../assets/icons/close.png'
 
 export default {
     airplay,
@@ -19,5 +20,6 @@ export default {
     right_arrow,
     search,
     start,
-    upload
+    upload,
+    close
 }

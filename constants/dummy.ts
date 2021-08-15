@@ -1,20 +1,10 @@
-import BarbariansCover from '../assets/images/series/barbarians/barbarians_cover.jpg'
-import DummyProfileOne from '../assets/images/dummy_profile/1.jpg'
-import DummyProfileTwo from '../assets/images/dummy_profile/2.jpg'
-import DummyProfileThree from '../assets/images/dummy_profile/3.jpg'
-import DummyProfileFour from '../assets/images/dummy_profile/4.jpg'
-import DummyProfileFive from '../assets/images/dummy_profile/5.jpg'
-import DummyProfileSix from '../assets/images/dummy_profile/6.jpg'
-import Barbarians from '../assets/images/series/barbarians/barbarians.jpg'
-
-import PrisionBreakCover from '../assets/images/series/prison_break/prison_break_cover.jpg'
 import PrisionBreak from '../assets/images/series/prison_break/prison_break.webp'
 
 export const newSeason = [
     {
         id: 1,
-        name: "Barbarians",
-        thumbnail: require("../assets/images/series/barbarians/barbarians_cover.jpg"),
+        name: "Stranger Things",
+        thumbnail: require("../assets/images/series/stranger_things/stranger_things_cover.png"),
         stillWatching: [
             {
                 id: 1,
@@ -42,7 +32,7 @@ export const newSeason = [
             },
         ],
         details: {
-            image: require("../assets/images/series/barbarians/barbarians.jpg"),
+            image: require("../assets/images/series/stranger_things/stranger-things.jpg"),
             age: "16+",
             genre: "Historical Drama",
             ratings: 7.2,
@@ -54,6 +44,22 @@ export const newSeason = [
     },
     {
         id: 2,
+        name: "Money Heist",
+        thumbnail: require("../assets/images/series/money_heist/money_heist_cover.jpg"),
+        stillWatching: [],
+        details: {
+            image: require("../assets/images/series/money_heist/money_heist.jpg"),
+            age: "16+",
+            genre: "Crime",
+            ratings: 8.3,
+            season: "SEASON 1",
+            currentEpisode: 'S1 : E15 "Episode 15 : Bella ciao"',
+            runningTime: "45m",
+            progress: "50%"
+        }
+    },
+    {
+        id: 3,
         name: "Bridgerton",
         thumbnail: require("../assets/images/series/bridgerton/bridgerton_cover.jpg"),
         stillWatching: [
@@ -81,22 +87,6 @@ export const newSeason = [
             ratings: 7.3,
             season: "SEASON 1",
             currentEpisode: 'S1 : E6 "Episode 6 : Swish"',
-            runningTime: "45m",
-            progress: "50%"
-        }
-    },
-    {
-        id: 3,
-        name: "Money Heist",
-        thumbnail: require("../assets/images/series/money_heist/money_heist_cover.jpg"),
-        stillWatching: [],
-        details: {
-            image: require("../assets/images/series/money_heist/money_heist.jpg"),
-            age: "16+",
-            genre: "Crime",
-            ratings: 8.3,
-            season: "SEASON 1",
-            currentEpisode: 'S1 : E15 "Episode 15 : Bella ciao"',
             runningTime: "45m",
             progress: "50%"
         }
@@ -167,8 +157,8 @@ export const continueWatching = [
     },
     {
         id: 3,
-        name: "Bridgerton",
-        thumbnail: require("../assets/images/series/bridgerton/bridgerton_cover.jpg"),
+        name: "How Sell Drugs Online",
+        thumbnail: require("../assets/images/series/drogas_online/drogas_cover.png"),
         overallProgress: "70%",
         details: {
             image: require("../assets/images/series/bridgerton/bridgerton.jpg"),

@@ -51,7 +51,7 @@ const Tabs = () => {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Profile"
         component={Home}
         options={{
@@ -59,7 +59,7 @@ const Tabs = () => {
             <TabIcon focused={focused} icon={icons.profile} />
           ),
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 };

@@ -17,7 +17,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import { useFonts } from "expo-font";
 
 const MovieDetail = () => {
-  const [selectedMovie, setSelectedMovie] = useState<any>();
+  const [selectMovie, setSelectedMovie] = useState<any>();
   const navigation = useNavigation();
   const route = useRoute<any>();
 
@@ -29,11 +29,21 @@ const MovieDetail = () => {
   if (!loaded) {
     return null;
   }
+    const { selectedMovie } = route.params;
+    // setSelectedMovie(selectedMovie.details);
 
-  useEffect(() => {
-    let { selectedMovie } = route.params;
-    setSelectedMovie(selectedMovie);
-  }, []);
+  // useEffect(() => {
+  //   let mounted = true;
+  //   const { selectedMovie } = route.params;
+  //   if (mounted === true) {
+  //     if (selectedMovie != null) {
+  //       setSelectedMovie(selectedMovie.details);
+  //     }
+  //   }
+  //   return () => {
+  //     mounted = false;
+  //   };
+  // }, []);
 
   function renderHeaderBar() {
     return (
@@ -135,7 +145,7 @@ const MovieDetail = () => {
                   ...FONTS.h4,
                 }}
               >
-                {selectedMovie?.details.season}
+                {selectedMovie?.details?.season}
               </Text>
 
               {/* Name */}
